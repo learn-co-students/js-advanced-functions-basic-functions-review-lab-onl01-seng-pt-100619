@@ -19,15 +19,6 @@ function wrapAdjective() {
 }
 
 const Calculator =
- function add (add=1+3) {
-      return Calculator.add(add);
+ function add () {
+     return Calculator.add();
  } 
-
-
-
-
-
-
- function actionApplyer( []) {
-
- }

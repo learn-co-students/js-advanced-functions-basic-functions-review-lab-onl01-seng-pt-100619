@@ -9,25 +9,7 @@ function saturdayFun(activity="roller-skate") {
     
 }
 
-function mondayWork(activity="go to the office") {
-    return `This Monday, I will ${activity}.`
-}
+function mondayWork() {
 
-function wrapAdjective() {
     
-
 }
-
-const Calculator =
- function add (add=1+3) {
-      return Calculator.add(add);
- } 
-
-
-
-
-
-
- function actionApplyer( []) {
-
- }

@@ -22,12 +22,3 @@ const Calculator =
  function add (add=1+3) {
       return Calculator.add(add);
  } 
-
-
-
-
-
-
- function actionApplyer( []) {
-
- }
