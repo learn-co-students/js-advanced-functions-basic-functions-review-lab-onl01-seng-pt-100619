@@ -4,5 +4,6 @@ function saturdayFun(str= 'roller-skate') {
 }
 
 let mondayWork = function(str= 'go to the office') {
-    return `This Monday, I will ${str}`
+    return `This Monday, I will ${str}.`
 }
+mondayWork()
