@@ -10,26 +10,5 @@ function saturdayFun(activity="roller-skate") {
 }
 
 function mondayWork(activity="go to the office") {
-    return `This Monday, I will ${activity}.`
+    return `This Monday, I will ${activity}!`
 }
-
-function wrapAdjective() {
-    function result (spec="special") {
-        return console.log(`You are ${spec}`)
-    }
-
-}
-
-const Calculator =
- function add (add=1+3) {
-      return Calculator.add(add);
- } 
-
-
-
-
-
-
- function actionApplyer() {
-
- }

@@ -14,9 +14,7 @@ function mondayWork(activity="go to the office") {
 }
 
 function wrapAdjective() {
-    function result (spec="special") {
-        return console.log(`You are ${spec}`)
-    }
+    
 
 }
 
@@ -31,5 +29,5 @@ const Calculator =
 
 
  function actionApplyer() {
-
+     
  }
