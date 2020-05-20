@@ -7,3 +7,9 @@ let mondayWork = function(str= 'go to the office') {
     return `This Monday, I will ${str}.`
 }
 mondayWork()
+
+function wrapAdjective() {
+    return function(adj= 'special') {
+        return `You are ${adj}`
+    }
+}
