@@ -19,9 +19,8 @@ let mondayWork = function (activity = 'go to the office'){
 
 
 function wrapAdjective(vf = '*'){
-    let string = 'You are'
     return function (parameter = "special"){ 
-        return `${string} ${vf}${parameter}${vf}!`
+        return `You are ${vf}${parameter}${vf}!`
     }
     
 }
@@ -53,16 +52,17 @@ let [answer, theBase] = (
   // answer and theBase are not variable they are functions
 
   let Calculator = {// we pass an js object of functions where the name is the key and the value the iife
-      add: function (){return 1+3},
-      subtract: function(){return 1-3},
-      multiply: function(){return 1*3},
-      divide: function(){return 10/5},  
+      add: function (a,b){return a+b},
+      subtract: function(a,b){return a-b},
+      multiply: function(a,b){return a*b},
+      divide: function(a,b){return a/b}
     }
 
-function actionApplyer(integer, array){ 
+let actionApplyer = function (integer, array){ 
     // if array is empty return it
-    if (array === []){
-        return integer
+    let total = integer
+    for(let i = 0; i < array.length; i++){
+            total = array[i](total)  
     }
-    return function(){return integer * 4}    ]
+    return total;    
 }
