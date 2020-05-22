@@ -5,12 +5,12 @@ function saturdayFun(activity = "roller-skate") {
 let mondayWork = function(activity = "go to the office") {
   return `This Monday, I will ${activity}.`
 }
-
-function wrapAdjective(character = "*") {
-  let you = "You are "
-  return function(adjective = "special") {
-    return `${you}${character}${adjective}${character}!`
+function wrapAdjective(char= '*', msg = "You are ") { // Takes in two arguments
+  return function(adjective = "special") { // Returns a function take takes in 1 argument
+    return `${msg}${char}${adjective}${char}!` // Returns concatenated string 
   }
+  // wrapAdjective()(); => "You are *special*!"
+  // wrapAdjective("||")() => "You are ||special||!"
 }
 
 let Calculator = {
