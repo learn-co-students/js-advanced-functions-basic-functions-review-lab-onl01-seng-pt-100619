@@ -22,14 +22,16 @@ let Calculator = {
 
 
 let actionApplyer = function(num, arr) {
-  let newNum = num;
-  if (arr.length === 0) {
-    return num
+  // let newNum = num;
+  // arr.forEach(fn => {    USING forEach
+  //   newNum = fn(newNum)
+  // })
+  // return newNum
+
+  let result = num
+  for (let i = 0; i < arr.length; i++) {
+    result = arr[i](result)
+    console.log(result)
   }
-  else {
-    arr.forEach(fn => {
-      newNum = fn(newNum)
-    })
-    return newNum
-  }
+  return result // USING for loop
 }
