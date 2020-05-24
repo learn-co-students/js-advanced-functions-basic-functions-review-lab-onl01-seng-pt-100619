@@ -19,3 +19,10 @@ const Calculator = {
     multiply: function(a, b){return a * b},
     divide: function(a,b){return a/b}
 }
+
+function actionApplyer(integer, array) {
+    for(let i=0; i < array.length; i++){
+        integer = array[i](integer)
+    }
+    return integer
+}
